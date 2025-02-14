@@ -9,7 +9,7 @@ from rest_framework.views import APIView
 from rest_framework.generics import ListAPIView
 from rest_framework.response import Response
 
-from ai_travel_planner import settings
+from django.conf import settings
 from planner.serializers import ItineraryListSerializer, ItinerarySerializer
 from planner.models import Itinerary, Vote
 from planner.services.llm_planner import LLMPlanner

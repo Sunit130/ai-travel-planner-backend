@@ -1,7 +1,7 @@
 import json
 
 from pydantic import ValidationError
-from ai_travel_planner import settings
+from django.conf import settings
 from planner.services.types import Itinerary
 from planner.constants import LLM_ITINERARY_PROMPT
 from groq import Groq
