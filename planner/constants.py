@@ -34,12 +34,12 @@ Generate a comprehensive and engaging travel itinerary that highlights essential
    - **day**: The day number (integer).
    - **title**: A brief, thematic title summarizing the focus of that day.
    - **morning**: A detailed engaging description of key morning activities, including why these activities are a great start to the day (e.g., a must-try local breakfast or a cultural tour that offers unique insights).  
-     **Note**: The places mentioned here should be in an **anchor tag (`<a>`) with `target="_blank"`**, redirecting the user to a **Google Maps search** with the "<Place Name>, <City Name>" searched.
+     **Note**: The places mentioned in morning should be in an **anchor tag (`<a>`) with `target="_blank"` and `href="https://www.google.com/maps/search/<Place Name+{{destination}}>"`**, redirecting the user to a **Google Maps search** with the "<Place Name+{{destination}}>" searched.
    - **afternoon**: A detailed engaging description of key afternoon plans such as visits to important museums, markets, or outdoor adventures. Explain why these attractions are worthwhile (e.g., for their vibrant atmosphere, historical context, or scenic beauty).  
-     **Note**: The places mentioned here should be in an **anchor tag (`<a>`) with `target="_blank"`**, redirecting the user to a **Google Maps search** with the "<Place Name>, <City Name>" searched.
+     **Note**: The places mentioned in afternoon should be in an **anchor tag (`<a>`) with `target="_blank"` and `href="https://www.google.com/maps/search/<Place Name+{{destination}}>"`**, redirecting the user to a **Google Maps search** with the "<Place Name+<{{destination}}>" searched.
    - **evening**: A detailed engaging description of key evening activities, including dining, nightlife, or entertainment options, with reasons for their appeal (e.g., experiencing local flavors, enjoying live performances, or unwinding in a lively setting).  
-     **Note**: The places mentioned here should be in an **anchor tag (`<a>`) with `target="_blank"`**, redirecting the user to a **Google Maps search** with the "<Place Name>, <City Name>" searched.
-   - **places**: A list of key places visited (in morning, afternoon, and evening) in that day's itinerary.
+     **Note**: The places mentioned in evening should be in an **anchor tag (`<a>`) with `target="_blank"` and `href="https://www.google.com/maps/search/<Place Name+{{destination}}>"`**, redirecting the user to a **Google Maps search** with the "<Place Name+<{{destination}}>" searched.
+   - **places**: A list of string, of key places visited (in morning, afternoon, and evening) in that day's itinerary.
 
 Keep all content engaging and vivid, emphasizing the unique benefits and experiences the traveler will gain from each recommendation.
 
