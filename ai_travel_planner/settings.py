@@ -33,7 +33,8 @@ DEBUG = os.getenv("DEBUG", "True") == "True"
 CORS_ALLOWED_ORIGINS = [
     "http://192.168.1.5:3000",  # Allow frontend
     "http://localhost:3000",    # Allow local development
-    "https://ai-travel-planner-frontend.vercel.app"
+    "https://ai-travel-planner-frontend.vercel.app",
+    "https://www.traveltales.site"
 ]
 
 CORS_ALLOW_METHODS = ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
