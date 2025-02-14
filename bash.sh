@@ -4,6 +4,9 @@ set -o errexit
 echo "Bash | Install requirements"
 pip install -r requirements.txt
 
+echo "Bash | collect static files"
+python manage.py collectstatic --no-input
+
 echo "Bash | Migrate"
 python manage.py migrate
 
