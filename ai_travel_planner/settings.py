@@ -41,9 +41,15 @@ CORS_ALLOWED_ORIGINS = [
 CORS_ALLOW_METHODS = ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
 CORS_ALLOW_HEADERS = ["*"]
 
-ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
-
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://api.traveltales.site"
+]
+ALLOWED_HOSTS = [
+    "api.traveltales.site",
+    "13.200.246.34",
+    "127.0.0.1",
+    "localhost"
+]
 # Application definition
 
 INSTALLED_APPS = [
