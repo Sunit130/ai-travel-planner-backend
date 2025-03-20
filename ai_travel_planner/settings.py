@@ -103,8 +103,12 @@ WSGI_APPLICATION = 'ai_travel_planner.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'mydatabase',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'traveltales',
+        'USER': 'myuser',
+        'PASSWORD': 'rootpassword',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
